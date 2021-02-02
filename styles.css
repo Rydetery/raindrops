@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 1);
+    animation-name: show;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes show {
+    0% {  
+    background: rgba(0, 0, 0, 1);
+    }
+    33% {      
+    background: rgb(45, 10, 73);
+    }
+    66% {
+    background: rgb(52, 88, 104);
+    }
+    100% {  
+    background: rgba(0, 0, 0, 1);
+    }
+}
