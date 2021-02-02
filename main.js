@@ -1,9 +1,16 @@
-var canv = document.getElementById("canvas");
-var ctx = canv.getContext('2d');
+const canv = document.getElementById("canvas");
+const ctx = canv.getContext('2d');
 canv.width = window.innerWidth;
 canv.height = window.innerHeight;
+let rainColor = '#ffffff';
 
 var rainDrop = [];
+
+document.querySelector('#color').addEventListener('change', changeColor)
+
+function changeColor(e) {
+    rainColor = e.target.value;
+}
 
 setInterval(loop, 10);
 
@@ -16,7 +23,7 @@ class Rain {
     }
     show(){
         ctx.beginPath();
-        ctx.strokeStyle = "#de1010";
+        ctx.strokeStyle = rainColor;
         ctx.moveTo(this.x, this.y);
         ctx.lineTo(this.x, this.y + this.size);
         ctx.stroke();

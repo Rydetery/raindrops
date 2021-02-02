@@ -3,7 +3,7 @@ body{
     overflow: hidden;
     background: rgba(0, 0, 0, 1);
     animation-name: show;
-    animation-duration: 20s;
+    animation-duration: 40s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -12,12 +12,23 @@ body{
     background: rgba(0, 0, 0, 1);
     }
     33% {      
-    background: rgb(45, 10, 73);
+    background: rgb(42, 42, 82);
     }
     66% {
-    background: rgb(52, 88, 104);
+    background: rgb(33, 21, 78);
     }
     100% {  
     background: rgba(0, 0, 0, 1);
     }
+}
+div {
+    position: absolute;
+    margin-top: 1em;
+    right: 3em;
+}
+#color {
+    width: 6em;
+    height: 2em;
+    border: none;
+    cursor: pointer;
 }
